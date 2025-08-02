@@ -1,0 +1,42 @@
+{
+  "expo": {
+    "name": "Gelato",
+    "slug": "gelato",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.menhir.gelato",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Gelato needs camera access for language learning exercises",
+        "NSMicrophoneUsageDescription": "Gelato needs microphone access for pronunciation practice"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.menhir.gelato",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      "expo-camera",
+      "expo-av",
+      "react-native-reanimated/plugin"
+    ]
+  }
+}
